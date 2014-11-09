@@ -8,3 +8,9 @@ exports.index = function(req, res) {
 		user: req.user || null
 	});
 };
+
+exports.comingsoon = function(req, res) {
+  res.render('comingsoon', {
+    user: req.user || null
+  });
+};
